@@ -133,13 +133,27 @@ h3{
 }
 
 #gallery{
-    background-image: url(/img/geometric-1732847_1920.jpg);
+   position: relative;
+   background-color: #030303;
+}
+
+#gallery:before{
+    content: "";
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    position: absolute;
+ background-image: url(/img/background.jpg);
+    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.45;
 }
 
 .showcase{
+    position:relative;
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
